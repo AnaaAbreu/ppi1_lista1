@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTTP</title>
+</head>
+
+<body>
+
+
+    <h1>HTTP</h1>
+
+    <h2>Papel do HTTP na comunicação entre navegador e servidor</h2>
+    <p>O <strong>HTTP</strong> (<em>HyperText Transfer Protocol</em>) é o protocolo responsável pela comunicação entre o
+        navegador e o servidor Web. Sempre que um usuário acessa um site, o navegador envia uma requisição HTTP ao
+        servidor, que responde enviando os recursos solicitados, como páginas HTML, imagens e outros arquivos.</p>
+
+    <br>
+    <hr>
+
+    <h2>Cliente, servidor, requisição e resposta</h2>
+    <p>O <strong>cliente</strong> é o navegador utilizado pelo usuário para acessar um site. O <strong>servidor</strong>
+        é o
+        computador que armazena os arquivos da aplicação Web. A <strong>requisição</strong> é a mensagem enviada pelo
+        cliente solicitando um recurso ao servidor. A <strong>resposta</strong> é a mensagem enviada pelo servidor
+        contendo o recurso solicitado ou um código indicando o resultado da solicitação.</p>
+
+    <br>
+    <hr>
+
+    <h2>Métodos HTTP</h2>
+
+    <h3>GET</h3>
+    <p>O método <strong>GET</strong> é utilizado para solicitar informações ao servidor, como abrir uma página ou
+        visualizar um produto.</p>
+
+    <h3>POST</h3>
+    <p>O método <strong>POST</strong> é utilizado para enviar informações ao servidor, como dados de um formulário de
+        cadastro ou login.</p>
+
+    <br>
+    <hr>
+
+    <h2>Exemplo de Requisição HTTP</h2>
+    <pre> GET /index.html HTTP/1.1 
+        Host: www.exemplo.com 
+        User-Agent: Mozilla/5.0 </pre>
+
+    <br>
+    <hr>
+
+    <h2>Exemplo de Resposta HTTP</h2>
+    <pre>HTTP/1.1 200 OK 
+        Content-Type: text/html
+        &lt;html&gt;
+         ... 
+         &lt;/html&gt;</pre>
+
+    <br>
+    <hr>
+
+    <h2>Códigos de Status HTTP</h2>
+    <ul>
+        <li>
+            <h3>200</h3>
+            <p>Requisição realizada com sucesso.</p>
+        </li>
+        <li>
+            <h3>301</h3>
+            <p>O recurso foi movido permanentemente para outro endereço.</p>
+        </li>
+        <li>
+            <h3>400</h3>
+            <p>A requisição enviada pelo cliente é inválida.</p>
+        </li>
+        <li>
+            <h3>403
+                <p>O acesso ao recurso foi proibido.</p>
+            </h3>
+        </li>
+        <li>
+            <h3>404</h3>
+            <p>O recurso solicitado não foi encontrado.</p>
+        </li>
+        <li>
+            <h3>500</h3>
+            <p>Erro interno no servidor.</p>
+        </li>
+    </ul>
+
+</body>
+
+</html>
